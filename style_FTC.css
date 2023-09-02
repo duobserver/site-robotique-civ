@@ -1,0 +1,96 @@
+/* Cartes des équipes */
+.card {
+  width: 100%;
+  padding-bottom: 30px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+  align-items: center;
+  overflow: hidden;
+  background-color: #fff;
+  
+  border-radius: 50px;
+  box-shadow: -20px 20px 20px #bbb;
+}
+
+#card-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-banner {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-position: top;
+  background-size: cover;
+}
+
+.card-pfp {
+  width: 150px;
+  aspect-ratio: 1/1;
+  margin-top: -65px;
+  
+  background-color: #fff;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.card-text {
+  width: 80%;
+  text-align: center;
+}
+
+.card-social {
+  background-color: transparent;
+  width: 50%;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+}
+
+.card-social:hover {
+  box-shadow:  -20px 20px 20px #bbb;
+  width: 53%;
+}
+
+/* Carte Frites */
+#frites-banner {
+  background-image: linear-gradient(45deg, hsla(19, 86%, 61%, 0.5) 0%, hsla(302, 76%, 39%, 0.5) 100%), url(gallery/team_frites.jpg);
+}
+
+/* Carte Baguettechs */
+#bague-banner {
+  background-image: linear-gradient(45deg, hsla(201, 84%, 57%, 0.5) 0%, hsla(283, 72%, 44%, 0.5) 100%), url(gallery/team_baguettes.jpg);
+}
+
+/* Carte Frenchineers */
+#french-banner {
+  background-image: linear-gradient(45deg, hsla(118, 42%, 57%, 0.5) 0%, rgba(48, 196, 225, 0.5) 100%), url(gallery/team_french.jpg);
+}
+
+/* Compatibilité */
+@media screen and ( min-width: 320px ) and ( max-width: 480px ) {
+  .card {
+    padding-top: 30px;
+    flex-direction: column;
+  }
+
+  .card-banner {
+    display: none;
+  }
+
+  .card-pfp {
+    margin-top: 0;
+  }
+}
+
+@media screen and ( min-width: 481px ) and ( max-width: 768px ) {
+  .card {
+    flex-direction: row;
+    padding-right: 30px;
+  }
+}
+
