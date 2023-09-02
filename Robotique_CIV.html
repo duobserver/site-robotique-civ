@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/RCIV.png">
+        <link rel="stylesheet" href="assets/style_RCIV.css">
+        
+        <!-- Resources pour les icônes -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+        <!-- Resources pour les carousels -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+        <title>Robotique CIV</title>
+    </head>
+    
+    <!-- Flèche pour remonter en haut de page -->
+    <a id="scrollTop" title="Remonter en haut de la page" onclick="topFunction()"><i class="fa-solid fa-circle-chevron-up fa-2x" style="color: black;"></i></a>
+
+    <body>
+        <!-- Barre de navigation -->
+        <nav id="navbar">
+            <input id="nav-toggle" type="checkbox">
+            <div class="logo"><strong>Accueil</strong></div>
+            <ul class="links">
+                <li><a class="navlink" id="nav_ftc" style="color: orangered;"href="FTC_CIV.html" id="competition-link">FTC</a></li>
+                <li><a class="navlink" id="nav_frc" style="color: blue;"href="FRC_CIV.html" id="competition-link">FRC</a></li>
+                <li><a onclick="document.getElementById('competitions').scrollIntoView();" class="navlink">Compétitions</a></li>
+                <li><a onclick="document.getElementById('squads').scrollIntoView();" class="navlink">Équipes</a></li>
+                <li><a onclick="document.getElementById('donate').scrollIntoView();" class="navlink">Soutenir</a></li>
+                <li><a onclick="document.getElementById('sponsors').scrollIntoView();" class="navlink">Sponsors</a></li>
+                <li><a onclick="document.getElementById('gallery').scrollIntoView();" class="navlink">Galerie</a></li>
+                <li><a onclick="document.getElementById('schedule').scrollIntoView();" class="navlink">Horaires</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+
+        <div style="height: 60px;"></div>
+
+        <!-- Présentation -->
+        <section id="banner" style="background-color: #78d3eb;">
+            <div class="container" id="banner-container">
+                <img src="assets/RCIV.png" style="width: 100%; aspect-ratio: 1/1; max-width: 500px;">
+                <div>
+                    <h1>Bienvenue au Club de Robotique du CIV !&#128075;</h1>
+                    <p style="max-width: 600px;">
+                        Nous sommes un club établi au <a href="https://bit.ly/civ-site" target="_blank" class="text-link">Centre International de Valbonne</a> et composé de plus de 40 membres, 3 équipes, passionnés par la programmation et la construction de robots. 
+                    </p>
+
+                    <a href="https://bit.ly/civ-maps" target="_blank" class="text-link">CIV sur Maps</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétitions -->
+        <section id="competitions">
+            <h1>Les compétitions</h1>
+            <div class="container">
+                <p>
+                    Chaque année, nous nous rendons à des évènements organisés par <a href="https://firstinspires.org" target="_blank" class="text-link">FIRST&#xae;</a> partout dans le monde (à Londres, au Québec ...) pour affronter des équipes internationales &#127757;. Nous participons aussi à d'autres compétitions non-officielles nationales (à Lyon par exemple) &#127941;.
+                </p>
+            </div>
+
+            <div class="container" style="overflow: visible;">
+                <a href="FTC_CIV.html" class="competition-link">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" id="ftc-card">
+                                <img src="assets/ftc_white.png" alt="FTC" style="width: 100%;">
+                            </div>
+                            <div class="flip-card-back" id="ftc-card">
+                                Rejoignez une équipe pour imaginer, construire, programmer et piloter le meilleur robot possible tout en s'entraidant avec les autres équipes !
+                            </div>
+                        </div>  
+                    </div>
+                </a>
+
+                <a href="FRC_CIV.html" class="competition-link">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" id="frc-card">
+                                <img src="assets/frc_white.png" alt="FTC" style="width: 100%;">
+                            </div>
+                            <div class="flip-card-back" id="frc-card">
+                                Un niveau supérieur en programmation et construction pour des compétitions encore plus spectaculaires !</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Équipes -->
+        <section id="squads">
+            <h1>Les équipes</h1>
+            <div class="container">
+                <p>
+                    Découvrez et supportez nos équipes de <a href="FTC_CIV.html" class="text-link">FTC</a> et <a href="FRC_CIV.html" class="text-link">FRC</a> sur Instagram !
+                </p>
+            </div>
+
+            <div class="container" style="overflow: visible;">
+                <div class="grid">
+                <a href="https://bit.ly/insta_frites" class="social-link" target="_blank">
+                    <img src="assets/ig_frites.png" alt="ig_frites">             
+                </a> 
+                
+                <a href="https://bit.ly/insta_baguettechs" class="social-link" target="_blank">
+                    <img src="assets/ig_baguettechs.png" alt="ig_baguettechs">                    
+                </a>
+
+                <a href="https://bit.ly/insta_frenchineers" class="social-link" target="_blank">
+                    <img src="assets/ig_frenchineers.png" alt="ig_frenchineers">                    
+                </a> 
+                
+                <a href="https://bit.ly/insta_frc" class="social-link" target="_blank">
+                    <img src="assets/ig_rciv.png" alt="ig_rciv">                    
+                </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donations -->
+        <section id="donate">
+            <h1>Faire un don</h1>
+            <div class="container" style="flex-direction: column !important;">
+                Si vous le souhaitez, vous pouvez soutenir le Club en faisant un don sur notre cagnotte HelloAsso &#129321;. Cet argent nous permettra d'acheter du matériel pour construire et améliorer nos robots. Nous apprécions votre générosité &#129392;.
+                <br><br>Chaque équipe gère ses propres finances. Lorsque vous faites un don, 30% de l&#39;argent est attribué à l&#39;association, et les 70% restants sont répartis équitablement entre les 3 équipes. L'argent attribué à l'association sert notamment à couvrir les dépenses administratives tels que les frais bancaires et d'assurance, ainsi que les dépenses communes aux trois équipes, comme le transport ou l'inscription.
+                <br><br>Nous utilisons l'argent de différentes façons, par exemple :
+                <ul>
+                    <li>
+                        Pour acheter des pièces et des outils pour les robots. Chaque robot contient plus de 5000€ de contrôleurs, moteurs, capteurs, pièces découpées, imprimées en 3D, gravées etc. Nous espérons acheter des pièces telles que des moteurs plus performants, des capteurs nécéssaires au mode autonome, et des outils comme une CNC qui nous aideront grandement à avancer dans nos projets.
+                    </li>
+                    <li>
+                        Pour financer la communication. Cela inclut les sites web, posters, et T-shirts des équipes, ainsi que la communication dans le lycée et ailleurs.
+                    </li>
+                    <li>
+                        Pour financer les évènements que nous organisons et notre participation à d'autres évènements.
+                    </li>
+                    <li>
+                        Pour les frais engendrés par la participation au First Tech Challenge ou à d'autres compétitions de robotique. Cela inclut les frais d'inscription et les frais de transport (pour les robots et pour les participants).
+                    </li>
+                    <li>
+                        Pour nous permettre de participer à différentes activités, avec par exemple l'adhésion à des FabLabs et autres associations (pour aider pour la construction du robot ou la communication), ainsi que pour permettre aux élèves de découvrir différents domaines de la robotique, des procédés de construction ou encore pour rencontrer d'autres équipes.
+                    </li>
+                </ul>
+            </div>
+            <a href="https://bit.ly/HelloAsso-RobotiqueCIV" target="_blank" style="font-size: 2em;" class="text-link">Cagnotte HelloAsso</a>
+        </section>
+
+        <!-- Carousel Sponsors-->
+        <section id="sponsors" style="background-color: palegreen;">
+            <h1>Sponsors</h1>
+            <div class="container" style="overflow: hidden">
+                <div class="owl-carousel">
+                    <div class="item">
+                        <a href="https://www.arm.com/" target="_blank"><img src="assets/logos/logo_arm_white.svg" alt="logo_arm"></a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.sap.com/" target="_blank"><img src="assets/logos/sap.svg" alt="logo_sap"></a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.communityfoundation.ie/" target="_blank"><img src="assets/logos/logo_cfi_black.svg" alt="logo_cfi"></a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.firstinspires.org/" target="_blank"><img src="assets/logos/logo_first_black.png" alt="logo_first"></a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.ville-valbonne.fr/" target="_blank"><img src="assets/logos/logo_vsa.png" alt="logo_vsa"></a>
+                    </div>
+                    <div>
+                        <a href="http://www.civfrance.com/" target="_blank"><img src="assets/logos/logo_civ.jpg" alt="logo_civ"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel Photos -->
+        <section id="gallery">
+            <h1>Galerie</h1>
+            <div class="container" style="overflow: hidden;">
+                <ul class="gallery">
+                    <li><img src="assets/gallery/1.jpg"></li>
+                    <li><img src="assets/gallery/mia.jpg"></li>
+                    <li><img src="assets/gallery/terrain_jeu.jpg"></li>
+                    <li><img src="assets/gallery/7.jpg"></li>
+                    <li><img src="assets/gallery/9.jpg"></li>
+                    <li><img src="assets/gallery/4.jpg"></li>
+                    <li><img src="assets/gallery/5.jpg"></li>
+                    <li><img src="assets/gallery/salle.jpg"></li>
+                    <li><img src="assets/gallery/8.jpg"></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Horaires et emplacement -->
+        <section id="schedule">
+            <h1>Horaires</h1>
+            <div class="container">
+                <p style="text-align: center;">
+                    Le club ouvre aux 3<sup>èmes</sup> et lycéens à partir du 8 septembre.<br>
+                    &#128340; : Tous les mercredis de 13h à 15h et tous les vendredis de 15h à 19h.<br>
+                    &#127757; : Premier étage du bâtiment des prépas du Centre International de Valbonne.
+                </p>
+            </div>
+        </section>
+
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!-- Owlcarousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Script de base (mettre à la fin!) -->
+        <script src="assets/script.js"></script>
+    </body>
+</html>
